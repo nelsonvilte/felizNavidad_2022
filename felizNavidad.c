@@ -11,6 +11,7 @@ int main ()
 
 	int i,j,n,m,altura,base,longitud;
 	char c;
+	char texto[30] = "¡Paz, amor y felicidad!";
 	char mensaje[30] = "** ¡FELIZ NAVIDAD! :) **\n";
 	
 	c=48;
@@ -46,7 +47,15 @@ int main ()
 	for(i=1;i<(altura/2);i++)
 		printf(" ");
 	
+	longitud = strlen(texto);
 	
+	for(i=0;i<=longitud;i++){
+		Sleep(100);
+		printf("%c",texto[i]);
+	}
+	printf("\n \n");
+	for(i=1;i<(altura/2);i++)
+		printf(" ");
 	longitud = strlen(mensaje);
 	
 	for(i=0;i<=longitud;i++){
